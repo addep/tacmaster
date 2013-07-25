@@ -2,7 +2,7 @@
 <head>
  	
 
- 	<script src="js/jquery-2.0.3.min.js"></script>
+ 	<script src="../jquery-2.0.1.min.js"></script>
  	<script src="raphael-min.js"></script>
 	<script src="rgbcolor.js"></script>
 	<script src="canvg.js"></script>
