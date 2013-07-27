@@ -86,11 +86,22 @@
 	    lastX, lastY, path, pathString;
 		$('svg').attr("id","canvassvg");
 	
+		function getMousePos(canvas, evt) 
+		{
+			var rect = canvas.getBoundingClientRect();
+			return {
+			  x: evt.clientX - rect.left,
+			  y: evt.clientY - rect.top
+			};
+		}
+	
 		$(canvas).mousedown(function (e) {
 		    mousedown = true;
-		
-		    var x = e.offsetX,
-		        y = e.offsetY;
+			
+			var mousePos = getMousePos(canvas, e);
+			
+		    var x = mousePos.x,
+		        y = mousePos.y;
 		
 		    pathString = 'M' + x + ' ' + y + 'l0 0';
 		    path = paper.path(pathString);
@@ -138,9 +149,11 @@
 		        return;
 		    }
 		
-		    var x = e.offsetX,
-		        y = e.offsetY;
-		
+		    var mousePos = getMousePos(canvas, e);
+			
+		    var x = mousePos.x,
+		        y = mousePos.y;
+				
 		    pathString += 'l' + (x - lastX) + ' ' + (y - lastY);
 		    path.attr('path', pathString);
 		
