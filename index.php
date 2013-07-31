@@ -62,6 +62,9 @@
 	    <div id="redo" title="not yet functional">Redo</div>
 	    </div>
 
+	<div id="github">
+		<a href="http://www.github.com/reactionmaster/tacmaster"><p>Please contribute on GitHub!</p></a>
+	</div>
 		
 	</div>
 	
@@ -73,6 +76,9 @@
 	</div> 
 
 	
+
+	
+		
 	
 	<script>
 	
