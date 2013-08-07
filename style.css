@@ -90,7 +90,6 @@ ul, menu, dir {
 
 /************DRAW**************/
 #canvas {
-	background: #000;
 	background-size:contain;
 	z-index: 100;
 	max-height: 100%;
@@ -182,3 +181,16 @@ ul, menu, dir {
 	color: #44e;
 	text-decoration: none;
 } 
+
+
+/***********LICENSE************/
+#license {
+	position: absolute;
+	top: 1150px;
+	background: #eee;
+	color: #777;
+	text-align: center;
+	height: 200px;
+	font-size: 12px;
+}
+

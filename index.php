@@ -3,6 +3,7 @@
  	
 
  	<script src="js/jquery-2.0.1.min.js"></script>
+ 	<script src="js/svgfix-0.2.js"></script>
  	<script src="raphael-min.js"></script>
 	<script src="rgbcolor.js"></script>
 	<script src="canvg.js"></script>
@@ -65,12 +66,15 @@
 	<div id="github">
 		<a href="http://www.github.com/reactionmaster/tacmaster"><p>Please contribute on GitHub!</p></a>
 	</div>
-		
+		<div id="license">
+			<p>Lincense</p>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">tacmaster</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.reactionmaster.com/contact" property="cc:attributionName" rel="cc:attributionURL">addep</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
+		</div>
 	</div>
 	
 	
 	<div id="canvaswrapper">
-    <div id="canvas"></div>
+    <div id="canvas"></div></div>
     <canvas id="canvas2"></canvas>
 	<img id="converted_image" src="">
 	</div> 
@@ -293,8 +297,29 @@
 	</script>
 	
 	<script>
+
+	
+/*	function saveDaPicture(){
+    var img = document.getElementById('canvas').toDataURL("image/png");
+    $('body').append('<img src="'+img+'"/>');
+	}
+
+	$('#save').click(function(){
+	    var svg = $('#canvaswrapper').html().replace(/>\s+/g, ">").replace(/\s+</g, "<");
+	                             // strips off all spaces between tags
+	    //alert(svg);
+	    canvg('canvas', svg, {renderCallback: saveDaPicture, ignoreMouse: true, ignoreAnimation: true});
+	});
+	*/
+	
+	
+	
+	
 	
 	/*$('#save').click(function(){return document.location.href=_this.renderer.toDataURL('image/png').replace('image/png','image/octet-stream');});*/
+	
+	
+	
 		$('#save').mousedown(function(){
  
  
