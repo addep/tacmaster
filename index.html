@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--
+Tacmaster
+
+Creative Commons Attribution-NonCommercial 3.0 Unported License
+http://creativecommons.org/licenses/by-nc/3.0/
+
+BY : addep - http://www.reactionmaster.com/contact
+
+Contributors :
+    Jung Oh - https://github.com/jung3o
+-->
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <a href="https://github.com/reactionmaster/tacmaster"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:2;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+        <div class="darken"></div>
+
+            <ul id="nav">
+                <div id="logo">Tacmaster</div>
+<!-- Menu WIP???? -->
+<!--
+            <ul>
+                <li>Profile</li>
+                <li>Editor</li>
+                <li>Forum</li>
+            </ul>
+-->
+                <li>Map List
+                    <ul id="maps">
+                        <li data-map="cs_assault" class="map">cs_assault</li>
+                        <li data-map="cs_italy" class="map">cs_italy</li>
+                        <li data-map="cs_office" class="map">cs_office</li>
+                        <li data-map="de_aztec" class="map">de_aztec</li>
+                        <li data-map="de_dust" class="map">de_dust</li>
+                        <li data-map="de_dust2" class="map">de_dust2</li>
+                        <li data-map="de_inferno" class="map">de_inferno</li>
+                        <li data-map="de_mirage" class="map">de_mirage</li>
+                        <li data-map="de_nuke" class="map">de_nuke</li>
+                        <li data-map="de_train" class="map">de_train</li>
+                        <li data-map="de_vertigo" class="map">de_vertigo</li>
+                    </ul>
+                </li>
+
+                <li>Select Colour
+                    <ul id="canvascolours">
+                        <li data-colour="black"></li>
+                        <li data-colour="red"></li>
+                        <li data-colour="orange"></li>
+                        <li data-colour="yellow"></li>
+                        <li data-colour="green"></li>
+                        <li data-colour="blue"></li>
+                        <li data-colour="cyan"></li>
+                        <li data-colour="indigo"></li>
+                        <li data-colour="violet"></li>
+                        <li data-colour="grey"></li>
+                        <li data-colour="white"></li>
+                    </ul>
+                </li>
+                <li id="clearbtn">Clear All</li>
+                <li id="save">Save (WIP)</li>
+                <li id="undo">Undo (WIP)</li>
+                <li id="redo">Redo (WIP)</li>
+           </ul>
+
+        <div id="canvaswrapper">
+            <div id="canvas"></div>
+        </div>
+
+        <canvas id="canvas2"></canvas>
+        <img id="converted_image" src="">
+
+        <script src="js/jquery-2.0.1.min.js"></script>
+        <script src="js/svgfix-0.2.js"></script>
+        <script src="js/raphael-min.js"></script>
+        <script src="js/rgbcolor.js"></script>
+        <script src="js/canvg.js"></script>
+        <script src="js/StackBlur.js"></script>
+        <script src="js/svg.min.js"></script>
+        <script src="js/js.js"></script>
+    </body>
+</html>
