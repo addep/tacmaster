@@ -186,11 +186,12 @@ ul, menu, dir {
 /***********LICENSE************/
 #license {
 	position: absolute;
-	top: 1150px;
+	top: 1050px;
 	background: #eee;
 	color: #777;
 	text-align: center;
-	height: 200px;
+	height: 100px;
+	width: 100%;
 	font-size: 12px;
 }
 
