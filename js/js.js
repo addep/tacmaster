@@ -9,7 +9,7 @@ var canvas = document.getElementById('canvas'),
     lastY,
     path,
     pathString,
-    imageFolder = '/tacmaster/images/';
+    imageFolder = '/images/';
 
 $('svg').attr("id","canvassvg");
 
